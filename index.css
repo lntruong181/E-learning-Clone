@@ -1,0 +1,238 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  --primary-color: #18c4ee;
+  --second-color: #074f63;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.bg-image {
+  width: 100%;
+  height: 1024px;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(16px);
+  -webkit-filter: blur(8px);
+  background-image: url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.header__navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navbar-list {
+  flex: 2.5;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.header__navbar-list > * {
+  text-transform: uppercase;
+  margin-right: 35px;
+  color: white;
+}
+.header__navbar-logo {
+  flex: 1.5;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__navbar-logo p {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-right: 6px;
+}
+.header__navbar-login {
+  width: 10%;
+  flex: 1;
+}
+.header__navbar-login > * {
+  color: white;
+  padding: 15px 60px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+
+/* header content */
+
+.header__content {
+  /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+}
+.header__content-section {
+}
+.header__content-logo {
+  width: 100%;
+}
+.header__content-section p {
+  text-align: center;
+}
+.header__content-section p:first-child {
+  font-size: 48px;
+}
+.header__content-section p:last-child {
+  font-size: 25px;
+}
+.header__content-section button {
+  color: white;
+  padding: 15px 60px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 75px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.header__content-section button:hover {
+  transform: scale(1.1);
+}
+
+/* content container  */
+
+.container {
+  width: 100%;
+  padding: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container img {
+  width: 40%;
+}
+.title-content {
+  width: 40%;
+}
+.title-content > *:first-child {
+  font-size: 36px !important;
+}
+.title-content > * {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title-content ul li::marker {
+  color: var(--second-color);
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 36px;
+  color: #545454;
+  text-align: center;
+}
+.project-logo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  row-gap: 30px;
+  column-gap: 30px;
+  column-fill: auto;
+  justify-content: center;
+  justify-items: center;
+}
+.project-logo .logo {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  width: fit-content;
+}
+.project-logo p {
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+  font-size: 16px;
+  color: var(--second-color);
+}
+.project-logo img {
+  padding: 100px;
+  width: 650px;
+  height: 550px;
+}
+.logo1 img {
+  background-color: #b7e1db;
+}
+.logo2 img {
+  background-color: #f4ccc7;
+}
+.logo3 img {
+  background-color: #cad4a1;
+}
+.logo4 img {
+  background-color: #8ec2e5;
+}
+
+/* syllabus content */
+
+.syllabus {
+  width: 100%;
+  padding: 180px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  column-gap: 130px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2;
+  width: fit-content;
+  height: fit-content;
+}
+.card > * {
+  font-size: 18px;
+  font-weight: 400;
+  color: #545454;
+}
+.card p {
+  padding: 6px 290px 6px 24px;
+  background-color: var(--second-color);
+  color: #f5f5f5;
+  font-weight: 400;
+}
+.card ul li::marker {
+  color: var(--second-color);
+}
